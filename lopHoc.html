@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function Validate(validate) {
+       let regexp = /^[CAP][0-9]{4}[GHIKLM]$/;
+        if (regexp.test(validate)){
+            return true;
+        }
+        return false;
+    }
+    let validate = new Validate("C0719K");
+    console.log(Validate(validate));
+    validate = "M0318G";
+    console.log(Validate(validate));
+    validate = "P0323A";
+    console.log(Validate(validate));
+</script>
+
+</body>
+</html>
